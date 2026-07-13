@@ -26,6 +26,7 @@
         <div class="nav-links" aria-label="Primary">
           <a href="#services">Services</a>
           <a href="#process">Process</a>
+          <a href="#customer-portal">Customer Login</a>
           <a href="#contact">Contact</a>
         </div>
       </nav>
@@ -44,6 +45,7 @@
             <div class="hero-actions" aria-label="Primary calls to action">
               <a class="button button-primary" href="tel:+15550101337">Call (555) 010-1337</a>
               <a class="button button-secondary" href="#contact">Book a free intro call</a>
+              <a class="button button-secondary" href="#customer-portal">Customer portal</a>
             </div>
             <dl class="hero-stats" aria-label="Service highlights">
               <div>
@@ -188,6 +190,73 @@
               <blockquote>“From backups to password safety, we finally have a setup that feels manageable.”</blockquote>
               <figcaption>— Family technology client</figcaption>
             </figure>
+          </div>
+        </div>
+      </section>
+
+
+      <section id="customer-portal" class="section customer-portal" aria-labelledby="customer-portal-title">
+        <div class="container portal-grid">
+          <div class="portal-intro">
+            <p class="eyebrow">Customer portal</p>
+            <h2 id="customer-portal-title">Log in to follow repairs and add devices.</h2>
+            <p>
+              Customers can use this secure profile area to review devices currently being worked on,
+              check the latest service status, add another device to the queue, and download approved
+              remote support tools.
+            </p>
+            <form class="login-card" aria-label="Customer login form">
+              <label for="portal-email">Email address</label>
+              <input id="portal-email" name="portal-email" type="email" autocomplete="email" placeholder="customer@example.com" />
+              <label for="portal-password">Password</label>
+              <input id="portal-password" name="portal-password" type="password" autocomplete="current-password" placeholder="••••••••" />
+              <button class="button button-primary" type="submit">Log in to profile</button>
+              <p class="form-note">Demo portal preview. Account access will be connected to your ClearTeck customer profile.</p>
+            </form>
+          </div>
+
+          <div class="profile-pane" aria-label="Logged in customer profile preview">
+            <div class="profile-header">
+              <div>
+                <p class="eyebrow">Logged in profile</p>
+                <h3>Device workspace</h3>
+              </div>
+              <span class="profile-badge">Active customer</span>
+            </div>
+
+            <div class="device-list" aria-label="Devices being worked on">
+              <article class="device-card">
+                <div>
+                  <h4>MacBook Pro 14&quot;</h4>
+                  <p>Ticket #CT-2048 · Battery service and macOS cleanup</p>
+                </div>
+                <span class="status-pill in-progress">In progress</span>
+              </article>
+              <article class="device-card">
+                <div>
+                  <h4>Dell OptiPlex Desktop</h4>
+                  <p>Ticket #CT-2051 · Data transfer and security updates</p>
+                </div>
+                <span class="status-pill waiting">Waiting on parts</span>
+              </article>
+              <article class="device-card add-device">
+                <div>
+                  <h4>Add another device</h4>
+                  <p>Submit a laptop, desktop, phone, printer, or network device for service tracking.</p>
+                </div>
+                <a class="button button-secondary" href="#contact">Add device</a>
+              </article>
+            </div>
+
+            <div class="downloads-panel" aria-labelledby="downloads-title">
+              <p class="eyebrow">Downloads</p>
+              <h3 id="downloads-title">Remote Desktop: RustDesk</h3>
+              <p>Download the ClearTeck-approved RustDesk client for your operating system before a remote support session.</p>
+              <div class="download-actions">
+                <a class="button button-primary" href="https://github.com/rustdesk/rustdesk/releases/download/1.4.9/rustdesk-1.4.9-x86_64.msi">Download for Windows</a>
+                <a class="button button-secondary" href="https://github.com/rustdesk/rustdesk/releases/download/1.4.9/rustdesk-1.4.9-x86_64.dmg">Download for Mac</a>
+              </div>
+            </div>
           </div>
         </div>
       </section>

@@ -7,6 +7,8 @@ A modern, responsive landing page for a personal IT support service serving indi
 - Hero section with phone and booking calls to action
 - Service cards for home tech help, small business IT, networking, cybersecurity basics, device setup, backups, and troubleshooting
 - Trust/value, process, testimonial, and contact sections
+- Separate customer login page at `/customer-login.html`
+- Customer portal view intended for the `customer.clearteck.org` subdomain, with device tracking and RustDesk downloads
 - Mobile-first responsive layout with accessible semantic HTML and strong color contrast
 
 ## Run locally
@@ -28,3 +30,7 @@ Preview the production build:
 ```bash
 npm run preview
 ```
+
+## Customer portal deployment
+
+The public site links customers to `/customer-login.html`. The authenticated customer experience lives in `customer/index.html` and is intended to be deployed or routed as `https://customer.clearteck.org`.

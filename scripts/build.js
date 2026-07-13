@@ -3,5 +3,7 @@ import { cpSync, mkdirSync, rmSync } from 'node:fs';
 rmSync('dist', { recursive: true, force: true });
 mkdirSync('dist/src', { recursive: true });
 cpSync('index.html', 'dist/index.html');
+cpSync('customer-login.html', 'dist/customer-login.html');
+cpSync('customer', 'dist/customer', { recursive: true });
 cpSync('src', 'dist/src', { recursive: true });
 console.log('Built static site in dist/');

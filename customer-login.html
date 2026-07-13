@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Log in to the ClearTeck customer portal for device service tracking and support resources."
+    />
+    <title>Customer Login | ClearTeck</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/src/styles.css" />
+  </head>
+  <body>
+    <header class="site-header" aria-label="Customer login navigation">
+      <nav class="nav container">
+        <a class="brand" href="/" aria-label="ClearTeck home">
+          <span class="brand-mark">CT</span>
+          <span>ClearTeck</span>
+        </a>
+        <div class="nav-links" aria-label="Primary">
+          <a href="/">Home</a>
+          <a href="/#services">Services</a>
+          <a href="/#contact">Contact</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="section login-page" aria-labelledby="login-title">
+        <div class="container login-page-grid">
+          <div class="login-copy">
+            <p class="eyebrow">Customer login</p>
+            <h1 id="login-title">Access your ClearTeck customer account.</h1>
+            <p class="hero-subtitle">
+              Sign in to continue to your private customer workspace on customer.clearteck.org,
+              where device updates, service history, and support downloads are kept separate from
+              the public ClearTeck website.
+            </p>
+          </div>
+
+          <form class="login-card login-page-card" aria-label="Customer login form">
+            <label for="portal-email">Email address</label>
+            <input id="portal-email" name="portal-email" type="email" autocomplete="email" placeholder="customer@example.com" />
+            <label for="portal-password">Password</label>
+            <input id="portal-password" name="portal-password" type="password" autocomplete="current-password" placeholder="••••••••" />
+            <a class="button button-primary" href="https://customer.clearteck.org">Log in to customer portal</a>
+            <p class="form-note">
+              Customer profiles are hosted at customer.clearteck.org. If you need access, contact ClearTeck support.
+            </p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-content">
+        <p>© 2026 ClearTeck. Personal IT support for everyday technology.</p>
+        <a href="/">Back to home</a>
+      </div>
+    </footer>
+  </body>
+</html>

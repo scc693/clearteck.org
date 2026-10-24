@@ -1,8 +1,1 @@
-{
-  "$schema": "./node_modules/wrangler/config-schema.json",
-  "name": "clearteck",
-  "compatibility_date": "2026-07-13",
-  "assets": {
-    "directory": "./dist"
-  }
-}
+{"name":"clearteck","compatibility_date":"2026-10-24","assets":{"directory":"./dist"}}
